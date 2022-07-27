@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_margin="25dp"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/logo_login"
+        app:lottie_rawRes="@raw/welcome"
+        app:lottie_autoPlay="true"
+        app:lottie_repeatCount="100"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Food app"
+        android:textSize="26sp"
+        android:layout_below="@id/lottie_welcome"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue with Phone Number"
+        android:layout_marginHorizontal="15dp"
+        android:layout_above="@id/gsi_login"
+        android:id="@+id/phone_login_btn"
+        />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/gsi_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp" />
+
+    <ProgressBar
+        android:id="@+id/pb_login"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

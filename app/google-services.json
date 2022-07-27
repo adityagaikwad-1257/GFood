@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "288406402435",
+    "project_id": "gfood-a0097",
+    "storage_bucket": "gfood-a0097.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288406402435:android:a5a1f9bb4c3e151b2032b6",
+        "android_client_info": {
+          "package_name": "com.adi.gfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288406402435-466g3qn0ofl6qetvsv8rkea5me74dr4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-qz__7Ycg8GZzWTbAUL1S0l2bgex86L4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288406402435-466g3qn0ofl6qetvsv8rkea5me74dr4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

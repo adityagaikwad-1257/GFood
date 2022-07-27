@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+            android:textColor="@color/black"
+            android:text="Enter your address details"
+            />
+
+        <EditText
+            android:id="@+id/name_address_line_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/edit_text_bg_2"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            android:maxLength="15"
+            />
+
+        <EditText
+            android:id="@+id/address_line_1_address_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="House/flat no. Apartment name"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_bg_2"
+            android:padding="10dp"
+            android:inputType="textPostalAddress"
+            />
+
+        <EditText
+            android:id="@+id/address_line_2_address_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address line 2"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_bg_2"
+            android:padding="10dp"
+            android:inputType="textPostalAddress"
+            />
+
+        <EditText
+            android:id="@+id/land_mark_address_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Landmark"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_bg_2"
+            android:padding="10dp"
+            android:inputType="textPostalAddress"
+            android:maxLength="15"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Spinner
+                android:id="@+id/state_spinner_address_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/states"
+                android:padding="15dp" />
+
+            <EditText
+                android:id="@+id/pincode_address_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_bg_2"
+                android:hint="pin code"
+                android:maxLength="6"
+                android:inputType="number"
+                android:padding="15dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_address_btn_address_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:text="Add"/>
+
+    </LinearLayout>
+
+</ScrollView>

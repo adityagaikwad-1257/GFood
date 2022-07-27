@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/dish_image_order_vh"
+            android:src="@android:color/darker_gray"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="ORDERED"
+            android:id="@+id/status_order_vh"
+            android:layout_marginHorizontal="10dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/holo_green_dark"
+            android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_below="@id/status_order_vh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/dish_image_order_vh"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Rs.1122"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="?attr/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="end"
+                android:id="@+id/total_payable_order_vh"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                tools:text="02 May 2022"
+                android:layout_marginTop="5dp"
+                android:id="@+id/time_order_vh"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adi.gfood">
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".utils.GFood"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GFood">
+        <activity
+            android:name=".activities.ViewOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ProceedToPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SearchNCategoryShowActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name=".activities.DishShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.FirstActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.OnBoardActivity"
+            android:exported="false" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.AddressActivity" />
+        <activity android:name=".activities.EditProfileActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

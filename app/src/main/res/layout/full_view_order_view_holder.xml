@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:src="@android:color/darker_gray"
+            android:layout_marginEnd="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/dish_image_fv_order"
+            />
+
+        <TextView
+            android:id="@+id/sa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shipping address"
+            android:layout_toEndOf="@id/dish_image_fv_order"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            />
+
+        <TextView
+            android:id="@+id/shipping_address_fv_order_vh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Shipping address and my address is this and also this is my "
+            android:layout_below="@id/sa"
+            android:layout_toEndOf="@id/dish_image_fv_order"
+            android:layout_marginStart="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="ORDERED"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:id="@+id/order_status_fv_order"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_content_fv_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_below="@id/shipping_address_fv_order_vh"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/box_bg"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/total_payable_fv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Rs.1190"
+            android:padding="10dp"
+            android:background="?attr/colorPrimary"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_below="@id/ll_content_fv_order"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/order_time_fv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="02 May 2022 01:22:22 AM"
+            android:layout_below="@id/total_payable_fv_order"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/delivery_time_fv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="02 May 2022 01:22:22 AM"
+            android:layout_below="@id/order_time_fv_order"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/order_id_fv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/delivery_time_fv_order"
+            tools:text="jasjfshfhlkas;jfl;lfasj"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

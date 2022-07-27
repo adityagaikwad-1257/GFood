@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GFood</string>
+    <string-array name="states">
+        <item>Maharashtra</item>
+    </string-array>
+
+    <string-array name="payment_modes">
+        <item>Cash On Delivery</item>
+        <item>UPI</item>
+    </string-array>
+</resources>

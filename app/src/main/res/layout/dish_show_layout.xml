@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_back_arrow"
+            android:elevation="10dp"
+            android:layout_margin="10dp"
+            android:id="@+id/back_button_show"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:elevation="15dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@drawable/edit_text_bg_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:src="@android:color/darker_gray"
+                    android:id="@+id/dish_image_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <TextView
+                    android:id="@+id/offer_percentage_show"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    android:padding="15dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="15dp"
+            android:layout_margin="25dp"
+            android:layout_gravity="end"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/dish_original_price_best_deal_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+                    android:text="Rs. 200"
+                    android:textColor="@android:color/darker_gray"
+                    android:textStyle="bold"
+                    android:background="@drawable/stroke"
+                    />
+
+                <TextView
+                    android:id="@+id/dish_our_price_best_deal_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+                    android:textColor="?attr/colorPrimary"
+                    android:text="Rs. 100"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/dish_offer_price_best_deal_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+                    android:textColor="?attr/colorPrimary"
+                    android:text="Rs. 100"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:padding="5dp"
+            android:background="@drawable/edit_text_bg_2"
+            android:id="@+id/offer_name_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:ems="15"
+            android:textColor="?attr/colorPrimary"
+            android:text="Dish name 1234567890123456789012345678901234567890"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:padding="5dp"
+            android:background="@drawable/edit_text_bg_2"
+            android:id="@+id/best_deal_name_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:ems="20"
+            android:text="Dish name 1234567890123456789012345678901234567890"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/best_deal_dish_category_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:layout_marginTop="5dp"
+            android:ems="20"
+            android:textColor="@color/black"
+            android:text="category like Chinese, Authentic Food, etc"/>
+
+        <TextView
+            android:id="@+id/best_deal_dish_content_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+            android:layout_marginTop="5dp"
+            android:ems="20"
+            android:text="something + something + something"/>
+
+        <TextView
+            android:elevation="15dp"
+            android:background="@drawable/edit_text_bg_2"
+            android:padding="5dp"
+            android:id="@+id/best_deal_dish_descriptive_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:ems="25"
+            android:text="Description of the food here...\n the food description will be specified here this is an example text about the food"/>
+
+        <Button
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="add to cart"
+            android:id="@+id/add_to_cart_button_show"/>
+
+    </LinearLayout>
+
+</ScrollView>

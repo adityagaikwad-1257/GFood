@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="15dp"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:lottie_rawRes="@raw/food_del_2"
+            app:lottie_autoPlay="true"
+            app:lottie_repeatCount="100"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="At\nyour\ndoorstep"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#235625"
+            android:textSize="22sp"
+            android:fontFamily="@font/aldrich"
+            android:layout_marginStart="25dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faster\nDelivery"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#235625"
+            android:textSize="22sp"
+            android:fontFamily="@font/aldrich"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:lottie_rawRes="@raw/food_del_1"
+            app:lottie_autoPlay="true"
+            app:lottie_repeatCount="100"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="15dp"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:lottie_rawRes="@raw/food_del_3"
+            app:lottie_autoPlay="true"
+            app:lottie_repeatCount="100"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We care for you..\nwe are COVID safe"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#235625"
+            android:textSize="22sp"
+            android:fontFamily="@font/aldrich"
+            android:layout_marginStart="25dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_arrow"
+            app:tint="@color/black"
+            android:layout_margin="15dp"
+            android:padding="5dp"
+            android:id="@+id/back_arrow_user_details"
+            />
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:text="Enter your details"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/ic_person"
+            android:layout_marginBottom="25dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="?attr/colorPrimary"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/user_profile_image_user_details"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="25dp"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:id="@+id/et_first_name_user_details"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    android:padding="15dp"
+                    android:background="@drawable/edittext_bg"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:layout_marginHorizontal="15dp"
+                    android:id="@+id/et_last_name_user_details"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Name"
+                    android:padding="15dp"
+                    android:background="@drawable/edittext_bg"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_marginHorizontal="25dp"
+                android:id="@+id/et_email_user_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:layout_marginVertical="15dp"
+                android:hint="Enter your email address"
+                />
+
+            <Button
+                android:id="@+id/next_btn_user_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="25dp"
+                android:layout_marginHorizontal="25dp"
+                android:text="next ->"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

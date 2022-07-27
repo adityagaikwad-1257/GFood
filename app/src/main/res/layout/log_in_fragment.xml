@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:src="@mipmap/ic_launcher_round"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/welcome_lottie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_repeatCount="500"
+        app:lottie_rawRes="@raw/welcome"/>
+
+    <Button
+        android:layout_above="@id/gsi_btn"
+        android:id="@+id/phone_no_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:textAllCaps="false"
+        android:text="Continue with Phone Number"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/gsi_btn"
+        />
+
+</RelativeLayout>
